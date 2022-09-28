@@ -25,32 +25,30 @@ public class VendasApplication {
             List<Cliente> todosClientes = clientes.obterTodos();
             todosClientes.forEach(System.out::println);
 
-            System.out.println("Atualizando cliente");
-            todosClientes.forEach(c ->  {
-                c.setNome(c.getNome() + " atualizado.");
-                clientes.atualizar(c);
-            });
-
-            todosClientes = clientes.obterTodos();
-            todosClientes.forEach(System.out::println);
-
-            System.out.println("Buscando cliente por nome");
-            clientes.buscarPorNome("Adri").forEach(System.out::println);
-
-            System.out.println("Deletando cliente por nome");
-            clientes.obterTodos().forEach(c -> {
-                clientes.deletar(c);
-            });
-
-            System.out.println("Listando cliente");
-            todosClientes = clientes.obterTodos();
-            if (todosClientes.isEmpty()) {
-                System.out.println("Nenhum cliente encontrado.");
-            } else {
-                todosClientes.forEach(System.out::println);
-            }
-
-
+//            System.out.println("Atualizando cliente");
+//            todosClientes.forEach(c ->  {
+//                c.setNome(c.getNome() + " atualizado.");
+//                clientes.atualizar(c);
+//            });
+//
+//            todosClientes = clientes.obterTodos();
+//            todosClientes.forEach(System.out::println);
+//
+//            System.out.println("Buscando cliente por nome");
+//            clientes.buscarPorNome("Adri").forEach(System.out::println);
+//
+//            System.out.println("Deletando cliente por nome");
+//            clientes.obterTodos().forEach(c -> {
+//                clientes.deletar(c);
+//            });
+//
+//            System.out.println("Listando cliente");
+//            todosClientes = clientes.obterTodos();
+//            if (todosClientes.isEmpty()) {
+//                System.out.println("Nenhum cliente encontrado.");
+//            } else {
+//                todosClientes.forEach(System.out::println);
+//            }
         };
     }
 
