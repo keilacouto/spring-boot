@@ -34,8 +34,11 @@ public class VendasApplication {
 
             pedidos.save(p);
 
-            Cliente cliente = clientes.findClienteFetchPedidos(keila.getId());
-            System.out.println(cliente.getPedidos());
+//            Cliente cliente = clientes.findClienteFetchPedidos(keila.getId());
+//            System.out.println(cliente);
+//            System.out.println(cliente.getPedidos());
+
+            pedidos.findByCliente(keila).forEach(System.out::println);
         };
     }
 
