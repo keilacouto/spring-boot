@@ -1,7 +1,7 @@
 package io.github.keilacouto;
 
 import io.github.keilacouto.domain.entity.Cliente;
-import io.github.keilacouto.domain.repositorio.Clientes;
+import io.github.keilacouto.domain.repository.Clientes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

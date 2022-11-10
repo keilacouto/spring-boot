@@ -1,4 +1,4 @@
-package io.github.keilacouto.domain.repositorio;
+package io.github.keilacouto.domain.repository;
 
 import io.github.keilacouto.domain.entity.Cliente;
 import org.springframework.data.jpa.repository.JpaRepository;
